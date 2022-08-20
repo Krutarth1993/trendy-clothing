@@ -1,8 +1,7 @@
-import CategoryItem from "./components/category-item/Category-item.component";
-import "./categories.styles.scss";
+import React from "react";
 
-const App = () => {
-  const categories = [
+function Categormenu() {
+  return <div> const categories = [
     {
       id: 1,
       title: "hats",
@@ -28,15 +27,7 @@ const App = () => {
       title: "mens",
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
-  ];
+  ];</div>;
+}
 
-  return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key={category.id} category={category} />
-      ))}
-    </div>
-  );
-};
-
-export default App;
+export default Categormenu;
